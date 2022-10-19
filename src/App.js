@@ -43,7 +43,7 @@ class App extends Component {
         <nav>
           <Link className="link" to="/">{`Home`}</Link>
           <Link className="link" to="/about">{`About`}</Link>
-          <Link className="link" to="/favorites">{`Favorite Pokémons`}</Link>
+          <Link className="link" to="/favorites">{`Favorite Pokémons`} </Link>
         </nav>
         <Routes
           favoritePokemons={ favoritePokemons }
