@@ -32,8 +32,8 @@ describe('testa e se é renderizado um card com as informações de determinado 
     const favoriteCheckBox = screen.getByRole('checkbox', { name: /Pokémon favoritado?/i });
     userEvent.click(favoriteCheckBox);
 
-    const imageFavo = screen.getByRole('img', { name: /Pikachu is marked as favorite/i });
+    const imageFavorite = screen.getByRole('img', { name: /Pikachu is marked as favorite/i });
     // const altImage = screen.getByRole('src', '/star-icon.svg');
-    expect(imageFavo).toHaveAttribute('src', '/star-icon.svg');
+    expect(imageFavorite).toHaveAttribute('src', '/star-icon.svg');
   });
 });
